@@ -23,7 +23,14 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
-
+img {
+		padding: 0;
+		display: block;
+		margin: 0 auto;
+		max-height: 100vh;
+		max-width: 100%;
+		height: auto;
+	}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -2561,6 +2568,7 @@ input, select, textarea {
 
 /* Image */
 
+
 	.image {
 		border-radius: 0.25em;
 		border: 0;
@@ -3535,6 +3543,7 @@ input, select, textarea {
 		top: 0;
 		width: 18em;
 		z-index: 10000;
+		
 	}
 
 		#sidebar > .inner {
@@ -3562,6 +3571,7 @@ input, select, textarea {
 			opacity: 1;
 			width: 100%;
 		}
+		
 
 			body.is-ie #sidebar > .inner {
 				height: 100%;
@@ -3880,7 +3890,34 @@ input, select, textarea {
 		background-size: 100% 100%;
 	}
 
+	.intro-me__picture--mask {
+		width:300px;
+		height: 300px;
+		border-radius: 50%;
+		overflow: hidden;
+		box-shadow: 0 18px 16px rgba(0,0,0,0.16);
+		margin-bottom: 20px;
+	}
+	
+	.intro-me__picture {
+		width: 100% 100%;
+		/*improve my picture*/
+		transform: scale(1.5);
+		padding-top: 0px;
+		padding-right: 0px;
+	}
+	.intro-me__img--container {
+		flex: 1;
+		display: flex;
+		align-items: center;
+	}
+	
+	.intro-me__img {
+		width:100%;
+	}
+
 		#intro p {
+			
 			font-size: 1.25em;
 		}
 
@@ -3907,3 +3944,6 @@ input, select, textarea {
 			}
 
 		}
+
+
+		
